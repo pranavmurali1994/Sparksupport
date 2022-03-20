@@ -286,10 +286,8 @@ Create container from image
 - name : wordpress container
   hosts: all
   become: true
-  tasks:
-  
-  
-  - name: wordpress container
+  tasks:   
+- name: wordpress container
     docker_container
       image: wordpress
       state: started
