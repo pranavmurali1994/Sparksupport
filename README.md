@@ -274,8 +274,7 @@ Image pull ansible-playbook
   become: true
   tasks:
 
-
-  - name: pull
+ - name: pull
     docker_image:
      name: wordpress
      tag: latest
