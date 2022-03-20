@@ -21,7 +21,7 @@ echo \
   
  sudo apt update
   
- # install Docker engine 19.03
+ # Install Docker engine 19.03
  sudo apt-get install docker-ce=5:19.03.15~3-0~ubuntu-focal docker-ce-cli=5:19.03.15~3-0~ubuntu-focal containerd.io  
 
 **#Adding docker to SUDO Group to run docker command without sudo**
