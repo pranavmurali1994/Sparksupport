@@ -287,7 +287,7 @@ Create container from image
     - setup-container
  ![Play1]  https://user-images.githubusercontent.com/92468658/159538219-b384d7f5-0e36-439b-be49-d88071837f2b.png
  ![Play2]  https://user-images.githubusercontent.com/92468658/159538268-cfb211d2-6ec8-4c9d-b02a-c7c62aebac55.png
-  ![play3] https://user-images.githubusercontent.com/92468658/159538305-c9abed3e-6556-4993-8a8b-0cd729d838a5.png
+ ![play3] https://user-images.githubusercontent.com/92468658/159538305-c9abed3e-6556-4993-8a8b-0cd729d838a5.png
 
   
 
