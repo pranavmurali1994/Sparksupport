@@ -238,7 +238,8 @@ ping node1 & ping node2
 
 Attached final output Screenshot 2a,2b,2c
 
-https://user-images.githubusercontent.com/92468658/159153072-923194c9-3d44-44a2-bf49-d4bde70b4f57.jpg
+[Updated]  https://user-images.githubusercontent.com/92468658/159484749-51a243a7-8a51-4840-8d66-273e265917e7.png
+
 
  
 **************************************************************************************************************************************************
