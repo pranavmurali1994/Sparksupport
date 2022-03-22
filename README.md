@@ -264,40 +264,32 @@ screeshot link
   https://user-images.githubusercontent.com/92468658/159153164-831a6da8-a7ac-4a31-94c7-a3494a84a350.jpg
 
 
-create ansible playbook for pulling code from docker repo
+created two ansible roles for pulling image & Up the container from the image
+ 
 
 sudo ansible-galaxy init setup-wordpress
+sudo ansible-galaxy init setup-container
 
 Image pull ansible-playbook
 ---
 - name : Pull wordpress image
   hosts: all
   become: true
-  tasks:
-
- - name: pull
-    docker_image:
-     name: wordpress
-     tag: latest
-     source: pull
+  roles:
+   - setup-wordpress
 
 Create container from image
 ---
-- name : wordpress container
+- name : container wordpress
   hosts: all
   become: true
-  tasks:   
-- name: wordpress container
-    docker_container
-      image: wordpress
-      state: started
-      ports:
-      - "8000:80"
-      tty: true
-      detach: true
+  roles: 
+    - setup-container
+ ![Play1]  https://user-images.githubusercontent.com/92468658/159538219-b384d7f5-0e36-439b-be49-d88071837f2b.png
+ ![Play2]  https://user-images.githubusercontent.com/92468658/159538268-cfb211d2-6ec8-4c9d-b02a-c7c62aebac55.png
+  ![play3] https://user-images.githubusercontent.com/92468658/159538305-c9abed3e-6556-4993-8a8b-0cd729d838a5.png
+
   
-  Output screenshot 
-  https://user-images.githubusercontent.com/92468658/159153257-4833dfa7-6f62-498f-9743-ec9f28530893.jpg
 
   **************************************************************************************************************************************************
   
