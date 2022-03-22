@@ -264,9 +264,10 @@ screeshot link
   https://user-images.githubusercontent.com/92468658/159153164-831a6da8-a7ac-4a31-94c7-a3494a84a350.jpg
 
 
-created two ansible roles for pulling image & Up the container from the image
+created two ansible roles for pulling image & Up the container from the image, converted the code into ansible role.
  
-
+#to initiate ansible roles
+ 
 sudo ansible-galaxy init setup-wordpress
 sudo ansible-galaxy init setup-container
 
