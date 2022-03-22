@@ -216,25 +216,25 @@ https://user-images.githubusercontent.com/92468658/159152882-c30e926e-c49c-4265-
   
   
    2. b) Create two docker containers with the above custom network with the alpine image in detached mode.
-  container Name Node1 and Node2
+  container Name container1 and container2
   
   docker run -itd --name node1 e9adb5357e84 /bin/sh
   docker run -itd --name node2 e9adb5357e84 /bin/sh
 
   attch network mynet 
 
-  docker network connect mynet node1
-  docker network connect mynet node2
+  docker network connect mynet container1
+  docker network connect mynet container2
   
   2. c) Ping the containers to each other by using the hostname.
   
- #login to node1
+ #login to container1 & container2
 
 docker exec -it <container id>
 
 #check the connectivity of both container
 
-ping node1 & ping node2 
+ping container1 & ping container2 
 
 Attached final output Screenshot 2a,2b,2c
 
